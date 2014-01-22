@@ -9,8 +9,7 @@ class Client
 
     public function __construct(Buzz $httpClient)
     {
-//        $this->browser = $httpClient;
-        $this->browser = new Buzz();
+        $this->browser = $httpClient;
     }
 
     public function getWeatherByCity ($city = false)
