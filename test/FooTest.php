@@ -8,10 +8,27 @@ class FooTest extends \PHPUnit_Framework_TestCase
 		$my = new Foo();
 		$this->assertEquals(7, $my->Math(21, 3));
 	}
-    public function testDivision()
+    /**
+     * @dataProvider providerDivision
+     */
+    public function testDivision($a, $b)
     {
         $this->setExpectedException('Project\Exception\Alarm');
         $my = new Foo();
-        $my->Math(4, 0);
+        $my->Math($a, $b);
+    }
+    public function providerDivision ()
+    {
+        return array (
+            array (2, false),
+            array (2, null),
+            array (3, 0),
+            array (2, -1),
+            array (2, 3.5),
+            array (3, 4),
+            array ('a', -1),
+            array (2, 3.5),
+            array (3, 4),
+        );
     }
 }
