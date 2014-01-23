@@ -1,6 +1,7 @@
 <?php
 namespace Weather;
 use Buzz\Browser as Buzz;
+use Weather\Exception\falseException;
 
 class Client
 {
@@ -15,6 +16,9 @@ class Client
     public function getWeatherByCity ($city = false)
     {
         $response = $this->browser->get(self::URL . $city . ',ru');
+        if(!$response) {
+            throw new Exception\falseException('NOT JSON');
+        }
         return new Response($response);
     }
 }
