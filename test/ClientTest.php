@@ -42,7 +42,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(3.5, $this->fixture->getWindSpeed());
     }
-    
+
     public function testCity()
     {
         $this->assertEquals('Voronezh', $this->fixture->getCity());
