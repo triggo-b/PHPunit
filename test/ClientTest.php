@@ -16,7 +16,17 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Weather\Response', $dp->getWeatherByCity());
     }
 
-//    $this->setExpectedException('Buzz\Exception\ClientException');
+    public function testThrowExceptionStub()
+    {
+        $stub = $this->getMock("Buzz\\Browser");
+
+        $stub->expects($this->once())
+            ->method('get')
+            ->will($this->throwException(new Weather\Exception\falseException()));
+        $dd = new Client($stub);
+        $this->setExpectedException('Weather\Exception\falseException');
+        $dd->getWeatherByCity();
+    }
 
     protected function setUp()
     {
@@ -60,8 +70,6 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 
         $this->fixture = new \Weather\Response($data);
     }
-
-
 
     public function testPressure()
     {
