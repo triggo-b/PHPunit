@@ -12,3 +12,4 @@ absolute path! for PHPunit: c:\Users\<username>\project\PHPunit\vendor\bin <br/>
 <a href="http://habrahabr.ru/post/140217/">PHPUnit: Mock объекты</a><br/>
 <a href="http://stackoverflow.com/questions/15072964/phpunit-throwing-capturing-and-handling-custom-exceptions">PHPUnit - Throwing, capturing and handling custom exceptions</a><br/>
 <a href="http://habrahabr.ru/post/89581/">PHPUnit. Часть 04 Тестовые окружения (Fixtures)</a><br/>
+<a href="http://habrahabr.ru/post/134836/">Моки и стабы</a><br/>
