@@ -14,3 +14,4 @@ absolute path! for PHPunit: c:\Users\<username>\project\PHPunit\vendor\bin <br/>
 <a href="http://habrahabr.ru/post/89581/">PHPUnit. Часть 04 Тестовые окружения (Fixtures)</a><br/>
 <a href="http://habrahabr.ru/post/134836/">Моки и стабы</a><br/>
 <a href="http://merle-amber.blogspot.ru/2008/09/mock.html">Введение в mock-объекты. Классификация</a><br/>
+<a href="http://habrahabr.ru/post/129195/">Нормализация отношений. Первая и вторая нормальные формы</a>
